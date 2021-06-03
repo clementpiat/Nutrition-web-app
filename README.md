@@ -1,4 +1,4 @@
-# Nutrition React application 🥐
+# Nutrition web application 🥐
 
 Small web application to calculate, control, and record my food consumption.
 
