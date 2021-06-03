@@ -20,14 +20,14 @@ Create a ./api/.env file with the database credentials
 DB_USERNAME=username
 DB_PASSWORD=password
 ```
-To install and run the backend dependencies :
+To install the backend dependencies and start the backend :
 ```
 cd api
 tsc
 npm install
 npm start
 ```
-To install the frontend dependencies run
+To install the frontend dependencies and start the frontend :
 ```
 cd front
 npm install
