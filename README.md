@@ -1,4 +1,4 @@
-# Nutrition React application
+# Nutrition React application 🥐
 
 Small web application to calculate, control, and record my food consumption.
 
@@ -7,7 +7,7 @@ The Front is built with React.js.
 
 ## Overview
 
-![Overview](https://github.com/clementpiat/animes/blob/master/nutrition.gif)
+![Overview](https://github.com/clementpiat/Nutrition-web-app/blob/master/nutrition.gif)
 
 ## Install and start
 
