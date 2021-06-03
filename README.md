@@ -1,6 +1,6 @@
 # Nutrition web application 🥐
 
-Small web application to calculate, control, and record my food consumption.
+Small web application to calculate, control, and record food consumption.
 
 The API uses Node.js and Typescript, and is connected to a Mongodb database.
 The Front is built with React.js.
