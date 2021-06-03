@@ -24,6 +24,7 @@
     "@types/nanoid": "^1.2.1",
     "@types/uuid": "^3.4.4",
     "axios": "^0.18.0",
+    "dotenv": "^10.0.0",
     "express": "^4.16.3",
     "gitlab": "^4.5.1",
     "mongod": "^2.0.0",

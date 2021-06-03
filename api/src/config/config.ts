@@ -1,4 +1,8 @@
+const dotenv = require("dotenv")
+dotenv.config()
+
+const connectionString = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@coding-blog-t0xf0.mongodb.net/nutrition`
+
 export default {
-    "port": parseInt(process.env.PORT) || 4200,
-    "mongoUrl": process.env.MONGO_URL || "mongodb://yourdatabasepath"
+    "connectionString": connectionString
 }

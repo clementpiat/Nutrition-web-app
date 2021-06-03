@@ -12,8 +12,7 @@ class App {
     this.app = express();
     this.port = port;
     
-    
-    mongoose.connect(config.mongoUrl,{ useNewUrlParser: true });
+    mongoose.connect(config.connectionString);
 
     this.initializeMiddlewares();
     this.initializeControllers(routes);

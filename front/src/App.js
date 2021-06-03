@@ -70,22 +70,22 @@ class App extends Component {
 
   onFoodClick(name,code){
     console.log(name,code)
-    const nutritients = ["Energie, Règlement UE N° 1169/2011 (kcal/100g)","Protéines brutes, N x 6.25 (g/100g)","Glucides (g/100g)","Lipides (g/100g)"]
+    const nutritients = ["Energie, Règlement UE N° 1169/2011 (kcal/100 g)","Protéines, N x 6.25 (g/100 g)","Glucides (g/100 g)","Lipides (g/100 g)"]
     const d = {
-      "Energie, Règlement UE N° 1169/2011 (kcal/100g)" : "Energie (kcal/100g)",
-      "Protéines brutes, N x 6.25 (g/100g)" : "Protéines brutes (g/100g)",
-      "Glucides (g/100g)" : "Glucides (g/100g)",
-      "Lipides (g/100g)" : "Lipides (g/100g)" 
+      "Energie, Règlement UE N° 1169/2011 (kcal/100 g)" : "Energie (kcal/100g)",
+      "Protéines, N x 6.25 (g/100 g)" : "Protéines brutes (g/100g)",
+      "Glucides (g/100 g)" : "Glucides (g/100g)",
+      "Lipides (g/100 g)" : "Lipides (g/100g)" 
     }
     axios.get('http://localhost:4200/api/food/ciqual/code/'+JSON.stringify(code)).then(
       res => {
         var res = res.data;
-        console.log(res)
+        console.log(res);
         res = res.hits.hits[0]._source.compos
                     .filter(x => nutritients.indexOf(x.constNomFr)>-1)
                     .map(x => [d[x.constNomFr],x.compoTeneur])
         var data = {Name : name}
-        console.log("len",res.length)
+        console.log(res);
         for (var i =0;i<res.length;i++)
           data[res[i][0]] = res[i][1]
         console.log("data",data)
